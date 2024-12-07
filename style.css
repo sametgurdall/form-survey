@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(126, 50, 50);
+}
+
+.heading, .description {
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.description {
+    padding-bottom: 2rem;
+}
+
+.form-div {
+    background-color: lightslategray;
+    color: white;
+    width: 350px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form div div {
+    padding-top: 1rem;
+}
+
+#dropdown{
+    width: 100%;
+}
+
+#suggestions {
+    width: 100%;
+}
+
+#submit {
+    width: 100%;
+    font-weight: 600;
+}

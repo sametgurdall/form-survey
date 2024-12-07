@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <form id="survey-form">
+        
+        <div class="form-div">
+            <fieldset>
+                <legend>Survey Form</legend>
+            <!-- text-->
+            <div class="getname">
+                
+                    <label id="name-label" for="name">Fullname :</label>
+                    
+                    <input id="name" type="text" placeholder="" >
+            
+            </div>
+            <div class="getemail">
+                <label id="email-label" for="email">E-mail :</label>
+                <input id="email" type="email" placeholder="example@domain.com" required>
+            </div>
+            <div class="getage">
+                <label id="number-label" for="number">Age :</label>
+                <input id="number" type="number" min="1" max="100" placeholder="Enter your age between 1 to 100" required>
+            </div>
+            
+            <!-- gender -->
+            <div class="getgender">
+                <label for="dropdown">Select Gender:</label>
+                <select id="dropdown" name="options" required>
+                    <option value="" disabled selected>Make your choice</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+
+            <!-- radio button -->
+            <div class="getsocialmedia">
+                <p>Where did you hear us?</p>
+                <input type="radio" id="instagram" name="socialmedia" value="instagram" required>
+                <label for="instagram">Instagram</label>
+                <input type="radio" id="linkedin" name="socialmedia" value="linkedin">
+                <label for="linkedin">Linkedin</label>
+            </div>
+
+            <!-- checkbox  -->
+            <div class="getpermission">
+                <input type="checkbox" id="termsofservice" required>
+                <label for="termsofservice">Terms Of Service</label>
+                <input type="checkbox" id="subcribefornews">
+                <label for="subcribefornews">Subscribe For News</label>
+            </div>
+
+            <!-- text -->
+            <div class="suggestions">
+                <label for="suggestions"></label>
+                <textarea id="suggestions" name="suggestions" rows="5" cols="40" placeholder="Suggestions"></textarea>
+            </div>
+
+            <!-- button-->
+            <div>
+                <input type="submit" id="submit" value="Sign up">
+            </div>
+        </fieldset>
+        </div>    
+    
+    </form>
+</body>
+</html>
